@@ -1,0 +1,36 @@
+{
+	"name": "ds_azuresql_amcdp_products",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azuresql_amcdp",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "product_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "product_name",
+				"type": "varchar"
+			},
+			{
+				"name": "category",
+				"type": "varchar"
+			},
+			{
+				"name": "price",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "amc",
+			"table": "products"
+		}
+	}
+}
