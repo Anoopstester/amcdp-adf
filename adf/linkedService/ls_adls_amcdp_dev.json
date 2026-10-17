@@ -1,0 +1,11 @@
+{
+	"name": "ls_adls_amcdp_dev",
+	"properties": {
+		"description": "ADLS Gen2 landing zone for AMC API data (dev)",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://stamcdpdevcus001.dfs.core.windows.net/"
+		}
+	}
+}
