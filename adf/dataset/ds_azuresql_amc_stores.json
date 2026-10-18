@@ -1,0 +1,30 @@
+{
+	"name": "ds_azuresql_amc_stores",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azuresql_amcdp",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "store_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "store_name",
+				"type": "varchar"
+			},
+			{
+				"name": "location",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "amc",
+			"table": "stores"
+		}
+	}
+}
